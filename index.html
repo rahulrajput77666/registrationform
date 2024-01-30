@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        /* Add your custom styles here */
+    </style>
+</head>
+
+<body>
+    <h2>STUDENT REGISTRATION FORM</h2>
+    <form action="registration_process.php" method="post" enctype="multipart/form-data">
+        <h3>Basic Information</h3>
+        <label for="middleName">Middle Name:</label>
+        <input type="text" id="middleName" name="middleName" required><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br>
+
+        <label for="rollNo">Roll No.:</label>
+        <input type="text" id="rollNo" name="rollNo" required><br>
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phoneNo">Phone No.:</label>
+        <input type="tel" id="phoneNo" name="phoneNo" required><br>
+
+        <label for="userId">User ID:</label>
+        <input type="text" id="userId" name="userId" required><br>
+
+        <label for="password">Enter Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="rePassword">Re-Enter Password:</label>
+        <input type="password" id="rePassword" name="rePassword" required><br>
+
+        <label for="branch">Branch:</label>
+        <select id="branch" name="branch" required>
+            <option value="CSE">CSE</option>
+            <!-- Add other options as needed -->
+        </select><br>
+
+        <label for="year">Year of studying:</label>
+        <input type="text" id="year" name="year" required><br>
+
+        <label for="photo">Upload Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required><br>
+
+        <h3>Personal Details</h3>
+        <label for="fatherName">Father Name:</label>
+        <input type="text" id="fatherName" name="fatherName" required><br>
+
+        <label for="fatherContact">Contact No.:</label>
+        <input type="tel" id="fatherContact" name="fatherContact" required><br>
+
+        <label for="motherName">Mother Name:</label>
+        <input type="text" id="motherName" name="motherName" required><br>
+
+        <label for="motherContact">Contact No.:</label>
+        <input type="tel" id="motherContact" name="motherContact" required><br>
+
+        <label for="dob">Date Of Birth:</label>
+        <input type="text" id="dob" name="dob" placeholder="dd-mm-yyyy" required><br>
+
+        <label for="aadharNo">Aadhar No.:</label>
+        <input type="text" id="aadharNo" name="aadharNo" required><br>
+
+        <h3>Address</h3>
+        <label for="address1">Address1:</label>
+        <textarea id="address1" name="address1" rows="4" required></textarea><br>
+
+        <label for="address2">Address2:</label>
+        <textarea id="address2" name="address2" rows="4" required></textarea><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
